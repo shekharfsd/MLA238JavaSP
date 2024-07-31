@@ -1,0 +1,9 @@
+cd E:\JarExample
+
+javac -d . com/mphasis/utils/MainApp.java com/mphasis/utils/Utils.java
+
+jar cfm MyApp.jar MANIFEST.MF -C . com
+
+jar tf MyApp.jar
+
+java -jar MyApp.jar
